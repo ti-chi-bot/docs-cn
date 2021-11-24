@@ -877,7 +877,7 @@ aliases: ['/docs-cn/stable/alert-rules/','/docs-cn/v4.0/alert-rules/','/docs-cn/
 
 * 报警规则：
 
-    `(node_load5 / count without (cpu, mode) (node_cpu{mode="system"})) > 1`
+    `(node_load5 / count without (cpu, mode) (node_cpu_seconds_total{mode="system"})) > 1`
 
 * 规则描述：
 
